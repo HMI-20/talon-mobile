@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F2C9"
+    android:scrollIndicators="right">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Введите свои данные"
+            android:id="@+id/textView2"
+            android:layout_column="0"
+            android:layout_weight="3"
+            android:background="#93AF56"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:id="@+id/button"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="#336371"
+            android:onClick="backToClinic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Имя"
+            android:ems="10"
+            android:id="@+id/nameEditText"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Фамилия"
+            android:ems="10"
+            android:id="@+id/lastNameEditText"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Отчество"
+        android:ems="10"
+        android:id="@+id/patronymicEditText" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Город"
+            android:ems="10"
+            android:id="@+id/townEditText"
+            android:layout_weight="3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adressEditText"
+            android:text="Адрес(ул., д., кв.)"
+            android:layout_weight="1"
+            android:textIsSelectable="false" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Выберите дату рождения:"
+        android:id="@+id/textView3"
+        android:layout_weight="3"
+        android:layout_gravity="center_horizontal" />
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:id="@+id/DOBCalendarView"
+        android:showWeekNumber="false" />
+
+    <Button  style="@style/btn_margin_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        android:id="@+id/nextButton"
+        android:onClick="validatePersonAtClinic" />
+
+</LinearLayout>

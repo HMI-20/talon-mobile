@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F3F2C9">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:layout_alignParentTop="true"
+        android:scrollIndicators="right">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Выберите регион"
+                android:id="@+id/textView"
+                android:layout_column="0"
+                android:layout_weight="3"
+                android:background="#93AF56"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Помощь"
+                android:id="@+id/helpButton"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:background="#336371" />
+        </LinearLayout>
+
+        <Button style="@style/btn_margin_color"
+            android:text="Брестская область"
+            android:id="@+id/brestButton"
+            android:layout_marginTop="8dp" />
+
+        <Button style="@style/btn_margin_color"
+            android:text="Витебская область"
+            android:id="@+id/vitebskButton" />
+
+        <Button style="@style/btn_margin_color"
+            android:text="Гомельская область"
+            android:id="@+id/gomelButton" />
+
+        <Button style="@style/btn_margin_color"
+            android:text="Гродненская область"
+            android:id="@+id/grodnoButton"/>
+
+        <Button style="@style/btn_margin_color"
+            android:text="Минская область"
+            android:id="@+id/minskButton" />
+
+        <Button style="@style/btn_margin_color"
+            android:text="Могилёвская область"
+            android:id="@+id/mogilevButton" />
+
+        <Button style="@style/btn_margin_color"
+            android:text="Город Минск"
+            android:id="@+id/minskCityButton" />
+
+    </LinearLayout>
+
+</RelativeLayout>
