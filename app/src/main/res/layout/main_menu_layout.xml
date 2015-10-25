@@ -7,16 +7,8 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:layout_weight="2"
-            android:background="@drawable/logout_green"
-            android:onClick="backToRegion"
-            android:nestedScrollingEnabled="false" />
+        android:layout_height="wrap_content"
+        android:background="#336371">
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,20 +17,19 @@
             android:text="Введите свои данные"
             android:id="@+id/textView2"
             android:layout_column="0"
-            android:layout_weight="3"
             android:background="#93AF56"
             android:gravity="center"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:layout_weight="3" />
 
-        <Button
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="48dp"
             android:layout_height="wrap_content"
-            android:text="Назад"
-            android:id="@+id/button"
-            android:layout_column="3"
-            android:layout_weight="1"
-            android:background="#336371"
-            android:onClick="backToClinic" />
+            android:id="@+id/imageView"
+            android:background="@drawable/logout"
+            android:onClick="logout"
+            android:nestedScrollingEnabled="false" />
+
     </LinearLayout>
 
     <TextView
@@ -64,7 +55,8 @@
 
     <Button style="@style/btn_margin_color"
         android:text="Заказать талон"
-        android:id="@+id/button2" />
+        android:id="@+id/orderTicketButton"
+        android:onClick="selectSpeciality" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -75,7 +67,8 @@
 
     <Button style="@style/btn_margin_color"
         android:text="Вызвать врача"
-        android:id="@+id/button3" />
+        android:id="@+id/callDoctorButton"
+        android:onClick="selectSpeciality" />
 
     <TextView
         android:layout_width="wrap_content"

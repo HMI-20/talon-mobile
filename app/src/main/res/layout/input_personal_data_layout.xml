@@ -8,7 +8,16 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:background="#336371">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_column="3"
+            android:background="@drawable/back"
+            android:onClick="backToClinic" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -22,15 +31,6 @@
             android:gravity="center"
             android:textSize="20dp" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Назад"
-            android:id="@+id/button"
-            android:layout_column="3"
-            android:layout_weight="1"
-            android:background="#336371"
-            android:onClick="backToClinic" />
     </LinearLayout>
 
     <LinearLayout

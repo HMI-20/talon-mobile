@@ -1,7 +1,5 @@
 package com.example.artyom.hospitalonline;
 
-import android.app.Application;
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,26 +7,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.artyom.hospitalonline.adapter.ClinicAdapter;
 import com.example.artyom.hospitalonline.dataProvider.DataProvider;
+import com.example.artyom.hospitalonline.model.Action;
+import com.example.artyom.hospitalonline.model.ActionType;
 import com.example.artyom.hospitalonline.model.Clinic;
-import com.example.artyom.hospitalonline.model.Person;
-import com.example.artyom.hospitalonline.validator.Checker;
+import com.example.artyom.hospitalonline.model.Patient;
+import com.example.artyom.hospitalonline.util.ExtraCalculation;
 
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     private int region;
     private static Clinic clinic;
-    private Person person = new Person();
-
+    private Patient person = new Patient();
+    private Action action = new Action();
 
 
     public static void setClinic(Clinic _clinic) {
@@ -123,12 +122,49 @@ public class MainActivity extends AppCompatActivity {
         person.setTown(((EditText) findViewById(R.id.townEditText)).getText().toString());
         person.setAddress(((EditText) findViewById(R.id.adressEditText)).getText().toString());
         person.setDateOfBirthday(new Date(((CalendarView) findViewById(R.id.DOBCalendarView)).getDate()));
-        if(Checker.isClient(clinic, person)){
+        if(ExtraCalculation.isClient(clinic, person)){
             setContentView(R.layout.main_menu_layout);
         }else{
             Toast.makeText(this, "В картотеке учреждения \"" + clinic.getTitle() +
                     "\" отсутствуют записи о пациенте с такими данными. Проверьте правильность введённых данных!", Toast.LENGTH_LONG).show();
         }
     }
+
+//----------main_menu_layout
+    public void selectSpeciality(View v){
+        switch (v.getId()){
+            case R.id.orderTicketButton:
+                action.setActionType(ActionType.ORDER_TICKET);
+                break;
+            case R.id.callDoctorButton:
+                action.setActionType(ActionType.CALL_DOCTOR);
+                break;
+        }
+        setContentView(R.layout.select_speciality_layout);
+        clinic.setStaff(DataProvider.getDoctors(clinic));
+        Spinner specialitySpinner = (Spinner)findViewById(R.id.specialitySpinner);
+        String[] items = ExtraCalculation.specialityOfStaff(clinic);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
+        specialitySpinner.setAdapter(adapter);
+        specialitySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(parent.getContext(), parent.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+    }
+
+    public void logout(View v){
+        setContentView(R.layout.activity_main);
+    }
+
+//---------select_speciality_layout
+
+
 
 }

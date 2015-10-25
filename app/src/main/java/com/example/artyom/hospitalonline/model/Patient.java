@@ -1,14 +1,16 @@
 package com.example.artyom.hospitalonline.model;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by Artyom on 24.10.2015.
  */
-public class Person {
+public class Patient {
     private String name, lastName, patronymic;
     private Date dateOfBirthday;
     private String town, address;
+    private List<Action> history;
 
     public String getName() {
         return name;
@@ -61,5 +63,13 @@ public class Person {
     @Override
     public String toString() {
         return name + " " + lastName + " " + patronymic + " " + town + " " + address + " " + dateOfBirthday.toString();
+    }
+
+    public List<Action> getHistory() {
+        return history;
+    }
+
+    public void setHistory(List<Action> history) {
+        this.history = history;
     }
 }
