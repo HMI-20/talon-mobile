@@ -14,13 +14,14 @@
             android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:id="@+id/helpButton"
-            android:background="@drawable/back" />
+            android:background="@drawable/back"
+            android:onClick="backToMenu" />
 
         <TextView
             android:layout_width="219dp"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Выберите специальность врача"
+            android:text="Заполните форму"
             android:id="@+id/textView2"
             android:layout_column="0"
             android:background="#93AF56"
@@ -44,5 +45,29 @@
         android:layout_height="wrap_content"
         android:id="@+id/specialitySpinner"
         android:layout_gravity="center_horizontal" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctorSpinner"
+        android:layout_gravity="center_horizontal" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/availableDaysSpinner"
+        android:layout_gravity="center_horizontal" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/availableTimeSpinner"
+        android:layout_gravity="center_horizontal" />
+
+    <Button style="@style/btn_margin_color"
+        android:text="Готово"
+        android:id="@+id/finishButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="finishOfAction" />
 
 </LinearLayout>

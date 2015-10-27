@@ -1,13 +1,13 @@
 package com.example.artyom.hospitalonline.model;
 
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  * Created by Artyom on 25.10.2015.
  */
 public class Action {
     private ActionType actionType;
-    private Date date;
+    private Calendar date;
     private Doctor doctor;
 
     public ActionType getActionType() {
@@ -18,11 +18,11 @@ public class Action {
         this.actionType = actionType;
     }
 
-    public Date getDate() {
+    public Calendar getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Calendar date) {
         this.date = date;
     }
 

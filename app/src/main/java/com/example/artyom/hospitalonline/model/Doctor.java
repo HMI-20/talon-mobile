@@ -1,5 +1,6 @@
 package com.example.artyom.hospitalonline.model;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -9,7 +10,7 @@ import java.util.List;
 public class Doctor {
     private  String fullName;
     private Speciality speciality;
-    private List<Date> freeSession;
+    private List<List<Calendar>> freeSession;
 
     public String getFullName() {
         return fullName;
@@ -27,11 +28,11 @@ public class Doctor {
         this.speciality = speciality;
     }
 
-    public List<Date> getFreeSession() {
+    public List<List<Calendar>> getFreeSession() {
         return freeSession;
     }
 
-    public void setFreeSession(List<Date> freeSession) {
+    public void setFreeSession(List<List<Calendar>> freeSession) {
         this.freeSession = freeSession;
     }
 }

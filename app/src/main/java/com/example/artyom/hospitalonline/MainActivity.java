@@ -7,10 +7,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.artyom.hospitalonline.adapter.ClinicAdapter;
@@ -21,10 +23,13 @@ import com.example.artyom.hospitalonline.model.Clinic;
 import com.example.artyom.hospitalonline.model.Patient;
 import com.example.artyom.hospitalonline.util.ExtraCalculation;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private int region;
+    private int day = 0;
     private static Clinic clinic;
     private Patient person = new Patient();
     private Action action = new Action();
@@ -140,16 +145,82 @@ public class MainActivity extends AppCompatActivity {
                 action.setActionType(ActionType.CALL_DOCTOR);
                 break;
         }
-        setContentView(R.layout.select_speciality_layout);
+        setContentView(R.layout.ordet_ticket_and_call_doctor_layout);
+        loadOrderTicketAndCallDoctorForm();
+    }
+
+    public void logout(View v){
+        setContentView(R.layout.activity_main);
+    }
+
+//---------ordet_ticket_and_call_doctor_layout
+    public void backToMenu(View v){
+        setContentView(R.layout.main_menu_layout);
+    }
+
+    public void loadOrderTicketAndCallDoctorForm(){
         clinic.setStaff(DataProvider.getDoctors(clinic));
-        Spinner specialitySpinner = (Spinner)findViewById(R.id.specialitySpinner);
-        String[] items = ExtraCalculation.specialityOfStaff(clinic);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
-        specialitySpinner.setAdapter(adapter);
+        final Spinner specialitySpinner = (Spinner)findViewById(R.id.specialitySpinner),
+                doctorSpinner = (Spinner) findViewById(R.id.doctorSpinner),
+                availableDaysSpinner = (Spinner) findViewById(R.id.availableDaysSpinner),
+                availableTimeSpinner = (Spinner) findViewById(R.id.availableTimeSpinner);
+        final Button finishButton = (Button) findViewById(R.id.finishButton);
+        specialitySpinner.setAdapter(new ArrayAdapter<>(this,
+                android.R.layout.simple_spinner_dropdown_item, ExtraCalculation.specialityOfStaff(clinic)));
         specialitySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(parent.getContext(), parent.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+                doctorSpinner.setAdapter(new ArrayAdapter<>(parent.getContext(),
+                        android.R.layout.simple_spinner_dropdown_item,
+                        ExtraCalculation.getDoctorsFromSpeciality(clinic, parent.getItemAtPosition(position).toString())));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        doctorSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                action.setDoctor(ExtraCalculation.getDoctorFromName(clinic, parent.getItemAtPosition(position).toString()));
+                String[] items = ExtraCalculation.getAvailableDaysFromDoctor(action.getDoctor());
+                if(items.length == 0){
+                    availableDaysSpinner.setEnabled(false);
+                    availableTimeSpinner.setEnabled(false);
+                    finishButton.setEnabled(false);
+                } else{
+                    availableDaysSpinner.setEnabled(true);
+                    availableTimeSpinner.setEnabled(true);
+                    finishButton.setEnabled(true);
+                    availableDaysSpinner.setAdapter(new ArrayAdapter<>(parent.getContext(),
+                            android.R.layout.simple_spinner_dropdown_item, items));
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        availableDaysSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                availableTimeSpinner.setAdapter(new ArrayAdapter<>(parent.getContext(),
+                        android.R.layout.simple_spinner_dropdown_item,
+                        ExtraCalculation.getAvailableSessionsFromDoctor(action.getDoctor(), position)));
+                setDay(position);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        availableTimeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                action.setDate(action.getDoctor().getFreeSession().get(day).get(position));
             }
 
             @Override
@@ -159,12 +230,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void logout(View v){
-        setContentView(R.layout.activity_main);
+    public void finishOfAction(View v){
+        person.getHistory().add(action);
+        backToMenu(v);
+        final TextView statusTextView = (TextView) findViewById(R.id.statusTextView);
+        statusTextView.setText("Выполнено!Просмотреть или отменить заказ можно в разделе \"История\"");
     }
 
-//---------select_speciality_layout
-
-
+    public void setDay(int day) {
+        this.day = day;
+    }
 
 }

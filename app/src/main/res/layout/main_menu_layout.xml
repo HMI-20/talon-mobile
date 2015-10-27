@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Введите свои данные"
+            android:text="Выберите действие"
             android:id="@+id/textView2"
             android:layout_column="0"
             android:background="#93AF56"
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textView5"
+        android:id="@+id/statusTextView"
         android:layout_gravity="center_horizontal" />
 
     <TextView

@@ -1,5 +1,6 @@
 package com.example.artyom.hospitalonline.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -10,7 +11,7 @@ public class Patient {
     private String name, lastName, patronymic;
     private Date dateOfBirthday;
     private String town, address;
-    private List<Action> history;
+    private List<Action> history = new ArrayList<>();
 
     public String getName() {
         return name;

@@ -8,7 +8,6 @@ import com.example.artyom.hospitalonline.model.Speciality;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -41,18 +40,19 @@ public class DataProvider {
         return staff;
     }
 
-    private static List<Date> getFreeSessions(Doctor doctor){
-        List<Date> freeSessions = new ArrayList<>();
+    private static List<List<Calendar>> getFreeSessions(Doctor doctor){
+        List<List<Calendar>> freeSessions = new ArrayList<>();
         Calendar now = Calendar.getInstance();
-        now.set(Calendar.DAY_OF_YEAR, now.get(Calendar.DAY_OF_YEAR)+1);
         for(int i = 0; i < 7; i++){
+            List<Calendar> newDay = new ArrayList<>();
             now.set(Calendar.DAY_OF_YEAR, now.get(Calendar.DAY_OF_YEAR)+1);
             for(int j = 8; j < 17; j++){
                 if(j != 13){
                     now.set(Calendar.HOUR_OF_DAY, j);
-                    freeSessions.add(now.getTime());
+                    newDay.add((Calendar) now.clone());
                 }
             }
+            freeSessions.add(newDay);
         }
         return freeSessions;
     }
