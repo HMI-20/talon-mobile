@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -126,12 +127,13 @@ public class MainActivity extends AppCompatActivity {
         person.setPatronymic(((EditText) findViewById(R.id.patronymicEditText)).getText().toString());
         person.setTown(((EditText) findViewById(R.id.townEditText)).getText().toString());
         person.setAddress(((EditText) findViewById(R.id.adressEditText)).getText().toString());
-        person.setDateOfBirthday(new Date(((CalendarView) findViewById(R.id.DOBCalendarView)).getDate()));
+        person.setDateOfBirthday(new Date(((DatePicker)findViewById(R.id.datePicker)).getCalendarView().getDate()));
         if(ExtraCalculation.isClient(clinic, person)){
             setContentView(R.layout.main_menu_layout);
         }else{
             Toast.makeText(this, "В картотеке учреждения \"" + clinic.getTitle() +
-                    "\" отсутствуют записи о пациенте с такими данными. Проверьте правильность введённых данных!", Toast.LENGTH_LONG).show();
+                    "\" отсутствуют записи о пациенте с такими данными. " +
+                    "Проверьте правильность введённых данных!", Toast.LENGTH_LONG).show();
         }
     }
 

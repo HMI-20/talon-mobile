@@ -99,14 +99,14 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Выберите дату рождения:"
         android:id="@+id/textView3"
-        android:layout_weight="3"
         android:layout_gravity="center_horizontal" />
 
-    <CalendarView
+    <DatePicker
         android:layout_width="match_parent"
-        android:layout_height="189dp"
-        android:id="@+id/DOBCalendarView"
-        android:showWeekNumber="false" />
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:startYear="1930"
+        android:calendarViewShown="false" />
 
     <Button  style="@style/btn_margin_color"
         android:layout_width="match_parent"
