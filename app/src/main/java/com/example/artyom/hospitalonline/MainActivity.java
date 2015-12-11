@@ -2,13 +2,13 @@ package com.example.artyom.hospitalonline;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.CalendarView;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -17,12 +17,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.artyom.hospitalonline.adapter.ClinicAdapter;
-import com.example.artyom.hospitalonline.dataProvider.DataProvider;
+import static com.example.artyom.hospitalonline.dataProvider.DataProvider.*;
+
+import com.example.artyom.hospitalonline.adapter.HistoryAdapter;
 import com.example.artyom.hospitalonline.model.Action;
 import com.example.artyom.hospitalonline.model.ActionType;
 import com.example.artyom.hospitalonline.model.Clinic;
 import com.example.artyom.hospitalonline.model.Patient;
-import com.example.artyom.hospitalonline.util.ExtraCalculation;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Listener for "region"-buttons
      * */
-    public void detectRegion(View v){
+    public void detectRegion(View v){//use in stylesheet
         switch (v.getId()){
             case R.id.brestButton:
                 region = 1;
@@ -112,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
     public void detectClinic(int region){
         setContentView(R.layout.clinic_layout);
         ListView clinics = (ListView) findViewById(R.id.clinicListView);
-        ArrayAdapter<Clinic> clinicArrayAdapter = new ClinicAdapter(this, DataProvider.getClinicsList(region));
+        ArrayAdapter<Clinic> clinicArrayAdapter = new ClinicAdapter(this, getClinicsList(region));
         clinics.setAdapter(clinicArrayAdapter);
     }
 
@@ -127,8 +128,8 @@ public class MainActivity extends AppCompatActivity {
         person.setPatronymic(((EditText) findViewById(R.id.patronymicEditText)).getText().toString());
         person.setTown(((EditText) findViewById(R.id.townEditText)).getText().toString());
         person.setAddress(((EditText) findViewById(R.id.adressEditText)).getText().toString());
-        person.setDateOfBirthday(new Date(((DatePicker)findViewById(R.id.datePicker)).getCalendarView().getDate()));
-        if(ExtraCalculation.isClient(clinic, person)){
+        person.setDateOfBirthday(new Date(((DatePicker) findViewById(R.id.datePicker)).getCalendarView().getDate()));
+        if(isClient(clinic, person)){
             setContentView(R.layout.main_menu_layout);
         }else{
             Toast.makeText(this, "В картотеке учреждения \"" + clinic.getTitle() +
@@ -155,26 +156,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void openHistory(View v){
+        setContentView(R.layout.history_layout);
+        ListView history = (ListView) findViewById(R.id.historyListView);
+        ArrayAdapter<Action> historyArrayAdapter = new HistoryAdapter(this, getHistory(person));
+        history.setAdapter(historyArrayAdapter);
+    }
+
 //---------ordet_ticket_and_call_doctor_layout
     public void backToMenu(View v){
         setContentView(R.layout.main_menu_layout);
     }
 
-    public void loadOrderTicketAndCallDoctorForm(){
-        clinic.setStaff(DataProvider.getDoctors(clinic));
+    private void loadOrderTicketAndCallDoctorForm(){
+        clinic.setStaff(getDoctors(clinic));
         final Spinner specialitySpinner = (Spinner)findViewById(R.id.specialitySpinner),
                 doctorSpinner = (Spinner) findViewById(R.id.doctorSpinner),
                 availableDaysSpinner = (Spinner) findViewById(R.id.availableDaysSpinner),
                 availableTimeSpinner = (Spinner) findViewById(R.id.availableTimeSpinner);
         final Button finishButton = (Button) findViewById(R.id.finishButton);
         specialitySpinner.setAdapter(new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_dropdown_item, ExtraCalculation.specialityOfStaff(clinic)));
+                android.R.layout.simple_spinner_dropdown_item, specialityOfStaff(clinic)));
         specialitySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 doctorSpinner.setAdapter(new ArrayAdapter<>(parent.getContext(),
                         android.R.layout.simple_spinner_dropdown_item,
-                        ExtraCalculation.getDoctorsFromSpeciality(clinic, parent.getItemAtPosition(position).toString())));
+                       getDoctorsFromSpeciality(clinic, parent.getItemAtPosition(position).toString())));
             }
 
             @Override
@@ -185,8 +193,8 @@ public class MainActivity extends AppCompatActivity {
         doctorSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                action.setDoctor(ExtraCalculation.getDoctorFromName(clinic, parent.getItemAtPosition(position).toString()));
-                String[] items = ExtraCalculation.getAvailableDaysFromDoctor(action.getDoctor());
+                action.setDoctor(getDoctorFromName(clinic, parent.getItemAtPosition(position).toString()));
+                String[] items = getAvailableDaysFromDoctor(action.getDoctor());
                 if(items.length == 0){
                     availableDaysSpinner.setEnabled(false);
                     availableTimeSpinner.setEnabled(false);
@@ -210,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 availableTimeSpinner.setAdapter(new ArrayAdapter<>(parent.getContext(),
                         android.R.layout.simple_spinner_dropdown_item,
-                        ExtraCalculation.getAvailableSessionsFromDoctor(action.getDoctor(), position)));
+                        getAvailableSessionsFromDoctor(action.getDoctor(), position)));
                 setDay(position);
             }
 
@@ -235,12 +243,14 @@ public class MainActivity extends AppCompatActivity {
     public void finishOfAction(View v){
         person.getHistory().add(action);
         backToMenu(v);
-        final TextView statusTextView = (TextView) findViewById(R.id.statusTextView);
-        statusTextView.setText("Выполнено!Просмотреть или отменить заказ можно в разделе \"История\"");
+        Toast.makeText(this, "Выполнено!Просмотреть или отменить заказ можно в разделе \"История\"", Toast.LENGTH_LONG).show();
     }
 
     public void setDay(int day) {
         this.day = day;
     }
+
+
+
 
 }

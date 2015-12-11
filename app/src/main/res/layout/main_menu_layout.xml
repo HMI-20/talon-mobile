@@ -79,6 +79,7 @@
 
     <Button style="@style/btn_margin_color"
         android:text="История"
-        android:id="@+id/button4" />
+        android:id="@+id/historyButton"
+        android:onClick="openHistory" />
 
 </LinearLayout>

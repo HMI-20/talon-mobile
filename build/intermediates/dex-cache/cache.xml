@@ -2,6 +2,20 @@
 <items version="2" >
 
     <item
+        jar="D:\Android\AndroidStudioProjects\HospitalOnline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="D:\Android\AndroidStudioProjects\HospitalOnline\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-ca7d89900fcd44565bd5ce2a84d88ed1774f9cf0.jar" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="D:\Android\AndroidStudioProjects\HospitalOnline\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-9792d51791d92eddc0d9758885c1364396bdbf7e.jar" />
+    </item>
+    <item
         jar="D:\Android\AndroidStudioProjects\HospitalOnline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -14,20 +28,6 @@
         revision="23.0.1"
         sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
         <dex dex="D:\Android\AndroidStudioProjects\HospitalOnline\app\build\intermediates\pre-dexed\debug\classes-374d3ac18a80727c408dc5f07d3783c0d4b85301.jar" />
-    </item>
-    <item
-        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="D:\Android\AndroidStudioProjects\HospitalOnline\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-9792d51791d92eddc0d9758885c1364396bdbf7e.jar" />
-    </item>
-    <item
-        jar="D:\Android\AndroidStudioProjects\HospitalOnline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="D:\Android\AndroidStudioProjects\HospitalOnline\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-ca7d89900fcd44565bd5ce2a84d88ed1774f9cf0.jar" />
     </item>
 
 </items>

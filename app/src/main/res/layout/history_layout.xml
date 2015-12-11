@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F2C9">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#336371">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/backToMainMenuButton"
+            android:layout_column="3"
+            android:background="@drawable/back"
+            android:onClick="backToMenu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="История"
+            android:id="@+id/titleTextView"
+            android:layout_column="0"
+            android:layout_weight="3"
+            android:background="#93AF56"
+            android:gravity="center"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/historyListView"
+        android:dividerHeight="0dp"
+        android:background="#F3F2C9"
+        android:divider="#F3F2C9"
+        android:footerDividersEnabled="false"
+        android:foregroundGravity="center"
+        android:textAlignment="center"
+        android:touchscreenBlocksFocus="false"
+        android:scrollIndicators="right" />
+
+
+</LinearLayout>

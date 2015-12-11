@@ -62,133 +62,50 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="140" column="41" selection-start-line="140" selection-start-column="41" selection-end-line="140" selection-end-column="41" />
+              <caret line="141" column="40" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="40" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#detectRegion#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#detectRegion#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#detectClinic#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#5284#5285#0" expanded="true" />
-                <element signature="e#5338#5339#0" expanded="true" />
-                <element signature="e#5422#5423#0" expanded="true" />
-                <element signature="e#5479#5480#0" expanded="true" />
-                <element signature="e#9399#9400#0" expanded="true" />
-                <element signature="e#9429#9430#0" expanded="true" />
+                <element signature="method#detectClinic#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#validatePersonAtClinic#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#selectSpeciality#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#openHistory#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#loadOrderTicketAndCallDoctorForm#0;class#MainActivity#0" expanded="false" />
+                <element signature="class#6524:7069" expanded="false" />
+                <element signature="method#onItemSelected#0;class#6524:7069" expanded="false" />
+                <element signature="method#onNothingSelected#0;class#6524:7069" expanded="false" />
+                <element signature="class#7124:8198" expanded="false" />
+                <element signature="method#onItemSelected#0;class#7124:8198" expanded="false" />
+                <element signature="class#8260:8828" expanded="false" />
+                <element signature="method#onItemSelected#0;class#8260:8828" expanded="false" />
+                <element signature="class#8890:9269" expanded="false" />
+                <element signature="method#finishOfAction#0;class#MainActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input_personal_data_layout.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/input_personal_data_layout.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Patient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/model/Patient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-              <folding>
-                <element signature="e#389#390#0" expanded="false" />
-                <element signature="e#416#417#0" expanded="false" />
-                <element signature="e#456#457#0" expanded="false" />
-                <element signature="e#488#489#0" expanded="false" />
-                <element signature="e#523#524#0" expanded="false" />
-                <element signature="e#554#555#0" expanded="false" />
-                <element signature="e#602#603#0" expanded="false" />
-                <element signature="e#642#643#0" expanded="false" />
-                <element signature="e#679#680#0" expanded="false" />
-                <element signature="e#712#713#0" expanded="false" />
-                <element signature="e#764#765#0" expanded="false" />
-                <element signature="e#808#809#0" expanded="false" />
-                <element signature="e#847#848#0" expanded="false" />
-                <element signature="e#884#885#0" expanded="false" />
-                <element signature="e#1025#1026#0" expanded="false" />
-                <element signature="e#1052#1053#0" expanded="false" />
-                <element signature="e#1092#1093#0" expanded="false" />
-                <element signature="e#1124#1125#0" expanded="false" />
-                <element signature="e#1158#1159#0" expanded="false" />
-                <element signature="e#1188#1189#0" expanded="false" />
-                <element signature="e#1234#1235#0" expanded="false" />
-                <element signature="e#1272#1273#0" expanded="false" />
-                <element signature="e#1484#1485#0" expanded="false" />
-                <element signature="e#1514#1515#0" expanded="false" />
-                <element signature="e#1566#1567#0" expanded="false" />
-                <element signature="e#1604#1605#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExtraCalculation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/util/ExtraCalculation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="70" selection-start-line="71" selection-start-column="70" selection-end-line="71" selection-end-column="70" />
-              <folding>
-                <element signature="method#specialityOfStaff#0;class#ExtraCalculation#0" expanded="false" />
-                <element signature="method#getDoctorFromName#0;class#ExtraCalculation#0" expanded="false" />
-                <element signature="method#getDoctorsFromSpeciality#0;class#ExtraCalculation#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ordet_ticket_and_call_doctor_layout.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ordet_ticket_and_call_doctor_layout.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_menu_layout.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_menu_layout.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="39" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataProvider.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataProvider.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/dataProvider/DataProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.44666666">
+              <caret line="135" column="1" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
               <folding>
                 <element signature="method#getClinicsList#0;class#DataProvider#0" expanded="false" />
-                <element signature="e#592#600#0" expanded="true" />
                 <element signature="method#getHistory#0;class#DataProvider#0" expanded="false" />
                 <element signature="method#getDoctors#0;class#DataProvider#0" expanded="false" />
+                <element signature="method#getFreeSessions#0;class#DataProvider#0" expanded="false" />
+                <element signature="method#isClient#0;class#DataProvider#0" expanded="false" />
+                <element signature="method#specialityOfStaff#0;class#DataProvider#0" expanded="false" />
+                <element signature="method#getDoctorFromName#0;class#DataProvider#0" expanded="false" />
+                <element signature="method#getDoctorsFromSpeciality#0;class#DataProvider#0" expanded="false" />
+                <element signature="method#getAvailableSessionsFromDoctor#0;class#DataProvider#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -200,8 +117,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="layoutResourceFile_vertical" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -1653,13 +1570,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/model/Doctor.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/model/Action.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/select_speciality_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/dataProvider/DataProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/model/Patient.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/input_personal_data_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/ordet_ticket_and_call_doctor_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/util/ExtraCalculation.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/history_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main_menu_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/history_item_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/input_personal_data_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/adapter/HistoryAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/dataProvider/DataProvider.java" />
       </list>
     </option>
   </component>
@@ -1706,7 +1627,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
@@ -1728,24 +1648,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HospitalOnline" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1792,6 +1694,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -2004,7 +1907,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5060514" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26701966" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2012,7 +1915,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1762481" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -2042,43 +1945,39 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/util/ExtraCalculation.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/dataProvider/DataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="70" selection-start-line="71" selection-start-column="70" selection-end-line="71" selection-end-column="70" />
+          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
           <folding>
-            <element signature="method#specialityOfStaff#0;class#ExtraCalculation#0" expanded="false" />
-            <element signature="method#getDoctorFromName#0;class#ExtraCalculation#0" expanded="false" />
-            <element signature="method#getDoctorsFromSpeciality#0;class#ExtraCalculation#0" expanded="false" />
+            <element signature="method#getClinicsList#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getHistory#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctors#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getFreeSessions#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#isClient#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#specialityOfStaff#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctorFromName#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctorsFromSpeciality#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getAvailableDaysFromDoctor#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getAvailableSessionsFromDoctor#0;class#DataProvider#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ordet_ticket_and_call_doctor_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_menu_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="39" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="39" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/dataProvider/DataProvider.java">
@@ -2087,9 +1986,15 @@
           <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
           <folding>
             <element signature="method#getClinicsList#0;class#DataProvider#0" expanded="false" />
-            <element signature="e#592#600#0" expanded="true" />
             <element signature="method#getHistory#0;class#DataProvider#0" expanded="false" />
             <element signature="method#getDoctors#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getFreeSessions#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#isClient#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#specialityOfStaff#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctorFromName#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctorsFromSpeciality#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getAvailableDaysFromDoctor#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getAvailableSessionsFromDoctor#0;class#DataProvider#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2107,15 +2012,27 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="147" column="46" selection-start-line="147" selection-start-column="46" selection-end-line="147" selection-end-column="46" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectRegion#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#detectRegion#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectClinic#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#5284#5285#0" expanded="true" />
-            <element signature="e#5338#5339#0" expanded="true" />
-            <element signature="e#5422#5423#0" expanded="true" />
-            <element signature="e#5479#5480#0" expanded="true" />
-            <element signature="e#9399#9400#0" expanded="true" />
-            <element signature="e#9429#9430#0" expanded="true" />
+            <element signature="method#detectClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#validatePersonAtClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#selectSpeciality#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#openHistory#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#loadOrderTicketAndCallDoctorForm#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#6524:7069" expanded="false" />
+            <element signature="method#onItemSelected#0;class#6524:7069" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#6524:7069" expanded="false" />
+            <element signature="class#7124:8198" expanded="false" />
+            <element signature="method#onItemSelected#0;class#7124:8198" expanded="false" />
+            <element signature="class#8260:8828" expanded="false" />
+            <element signature="method#onItemSelected#0;class#8260:8828" expanded="false" />
+            <element signature="class#8890:9269" expanded="false" />
+            <element signature="method#finishOfAction#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2124,31 +2041,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/util/ExtraCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="method#specialityOfStaff#0;class#ExtraCalculation#0" expanded="false" />
-            <element signature="method#getDoctorFromName#0;class#ExtraCalculation#0" expanded="false" />
-            <element signature="method#getDoctorsFromSpeciality#0;class#ExtraCalculation#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ordet_ticket_and_call_doctor_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/dataProvider/DataProvider.java">
@@ -2157,9 +2061,15 @@
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="method#getClinicsList#0;class#DataProvider#0" expanded="false" />
-            <element signature="e#592#600#0" expanded="true" />
             <element signature="method#getHistory#0;class#DataProvider#0" expanded="false" />
             <element signature="method#getDoctors#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getFreeSessions#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#isClient#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#specialityOfStaff#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctorFromName#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctorsFromSpeciality#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getAvailableDaysFromDoctor#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getAvailableSessionsFromDoctor#0;class#DataProvider#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2177,15 +2087,27 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="147" column="46" selection-start-line="147" selection-start-column="46" selection-end-line="147" selection-end-column="46" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectRegion#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#detectRegion#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectClinic#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#5284#5285#0" expanded="true" />
-            <element signature="e#5338#5339#0" expanded="true" />
-            <element signature="e#5422#5423#0" expanded="true" />
-            <element signature="e#5479#5480#0" expanded="true" />
-            <element signature="e#9399#9400#0" expanded="true" />
-            <element signature="e#9429#9430#0" expanded="true" />
+            <element signature="method#detectClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#validatePersonAtClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#selectSpeciality#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#openHistory#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#loadOrderTicketAndCallDoctorForm#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#6524:7069" expanded="false" />
+            <element signature="method#onItemSelected#0;class#6524:7069" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#6524:7069" expanded="false" />
+            <element signature="class#7124:8198" expanded="false" />
+            <element signature="method#onItemSelected#0;class#7124:8198" expanded="false" />
+            <element signature="class#8260:8828" expanded="false" />
+            <element signature="method#onItemSelected#0;class#8260:8828" expanded="false" />
+            <element signature="class#8890:9269" expanded="false" />
+            <element signature="method#finishOfAction#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2194,31 +2116,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/util/ExtraCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="method#specialityOfStaff#0;class#ExtraCalculation#0" expanded="false" />
-            <element signature="method#getDoctorFromName#0;class#ExtraCalculation#0" expanded="false" />
-            <element signature="method#getDoctorsFromSpeciality#0;class#ExtraCalculation#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ordet_ticket_and_call_doctor_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/dataProvider/DataProvider.java">
@@ -2227,9 +2136,15 @@
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="method#getClinicsList#0;class#DataProvider#0" expanded="false" />
-            <element signature="e#592#600#0" expanded="true" />
             <element signature="method#getHistory#0;class#DataProvider#0" expanded="false" />
             <element signature="method#getDoctors#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getFreeSessions#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#isClient#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#specialityOfStaff#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctorFromName#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctorsFromSpeciality#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getAvailableDaysFromDoctor#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getAvailableSessionsFromDoctor#0;class#DataProvider#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2247,51 +2162,51 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="99" column="28" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="28" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectRegion#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#detectRegion#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectClinic#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#5284#5285#0" expanded="true" />
-            <element signature="e#5338#5339#0" expanded="true" />
-            <element signature="e#5422#5423#0" expanded="true" />
-            <element signature="e#5479#5480#0" expanded="true" />
-            <element signature="e#9399#9400#0" expanded="true" />
-            <element signature="e#9429#9430#0" expanded="true" />
+            <element signature="method#detectClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#validatePersonAtClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#selectSpeciality#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#openHistory#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#loadOrderTicketAndCallDoctorForm#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#6524:7069" expanded="false" />
+            <element signature="method#onItemSelected#0;class#6524:7069" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#6524:7069" expanded="false" />
+            <element signature="class#7124:8198" expanded="false" />
+            <element signature="method#onItemSelected#0;class#7124:8198" expanded="false" />
+            <element signature="class#8260:8828" expanded="false" />
+            <element signature="method#onItemSelected#0;class#8260:8828" expanded="false" />
+            <element signature="class#8890:9269" expanded="false" />
+            <element signature="method#finishOfAction#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_menu_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/util/ExtraCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="method#specialityOfStaff#0;class#ExtraCalculation#0" expanded="false" />
-            <element signature="method#getDoctorFromName#0;class#ExtraCalculation#0" expanded="false" />
-            <element signature="method#getDoctorsFromSpeciality#0;class#ExtraCalculation#0" expanded="false" />
-          </folding>
-        </state>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/input_personal_data_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="110" column="44" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="44" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
@@ -2307,15 +2222,27 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectRegion#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#detectRegion#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectClinic#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#5284#5285#0" expanded="true" />
-            <element signature="e#5338#5339#0" expanded="true" />
-            <element signature="e#5422#5423#0" expanded="true" />
-            <element signature="e#5479#5480#0" expanded="true" />
-            <element signature="e#9399#9400#0" expanded="true" />
-            <element signature="e#9429#9430#0" expanded="true" />
+            <element signature="method#detectClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#validatePersonAtClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#selectSpeciality#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#openHistory#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#loadOrderTicketAndCallDoctorForm#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#6524:7069" expanded="false" />
+            <element signature="method#onItemSelected#0;class#6524:7069" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#6524:7069" expanded="false" />
+            <element signature="class#7124:8198" expanded="false" />
+            <element signature="method#onItemSelected#0;class#7124:8198" expanded="false" />
+            <element signature="class#8260:8828" expanded="false" />
+            <element signature="method#onItemSelected#0;class#8260:8828" expanded="false" />
+            <element signature="class#8890:9269" expanded="false" />
+            <element signature="method#finishOfAction#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2329,25 +2256,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/clinic_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="32" />
-          <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/MainActivity.java">
@@ -2355,28 +2280,39 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectRegion#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#detectRegion#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectClinic#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#5284#5285#0" expanded="true" />
-            <element signature="e#5338#5339#0" expanded="true" />
-            <element signature="e#5422#5423#0" expanded="true" />
-            <element signature="e#5479#5480#0" expanded="true" />
-            <element signature="e#9399#9400#0" expanded="true" />
-            <element signature="e#9429#9430#0" expanded="true" />
+            <element signature="method#detectClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#validatePersonAtClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#selectSpeciality#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#openHistory#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#loadOrderTicketAndCallDoctorForm#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#6524:7069" expanded="false" />
+            <element signature="method#onItemSelected#0;class#6524:7069" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#6524:7069" expanded="false" />
+            <element signature="class#7124:8198" expanded="false" />
+            <element signature="method#onItemSelected#0;class#7124:8198" expanded="false" />
+            <element signature="class#8260:8828" expanded="false" />
+            <element signature="method#onItemSelected#0;class#8260:8828" expanded="false" />
+            <element signature="class#8890:9269" expanded="false" />
+            <element signature="method#finishOfAction#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
@@ -2401,17 +2337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/clinic_item_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/model/ActionType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19833334">
@@ -2427,57 +2352,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/faq_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/clinic_layout.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="19" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../sdk/sources/android-23/android/widget/Spinner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0050890585">
           <caret line="416" column="1" selection-start-line="416" selection-start-column="1" selection-end-line="416" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/adapter/ClinicAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9310346">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2492,7 +2379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.255">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2500,54 +2386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68">
           <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
-          <folding>
-            <element signature="e#413#414#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/model/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/dataProvider/DataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
-          <folding>
-            <element signature="method#getClinicsList#0;class#DataProvider#0" expanded="false" />
-            <element signature="e#592#600#0" expanded="true" />
-            <element signature="method#getHistory#0;class#DataProvider#0" expanded="false" />
-            <element signature="method#getDoctors#0;class#DataProvider#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/util/ExtraCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="70" selection-start-line="71" selection-start-column="70" selection-end-line="71" selection-end-column="70" />
-          <folding>
-            <element signature="method#specialityOfStaff#0;class#ExtraCalculation#0" expanded="false" />
-            <element signature="method#getDoctorFromName#0;class#ExtraCalculation#0" expanded="false" />
-            <element signature="method#getDoctorsFromSpeciality#0;class#ExtraCalculation#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_menu_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="39" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2555,33 +2393,147 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17048346">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/input_personal_data_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/model/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19833334">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/clinic_item_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ordet_ticket_and_call_doctor_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/adapter/ClinicAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
           <folding>
-            <element signature="e#389#390#0" expanded="false" />
-            <element signature="e#416#417#0" expanded="false" />
-            <element signature="e#456#457#0" expanded="false" />
-            <element signature="e#488#489#0" expanded="false" />
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#554#555#0" expanded="false" />
-            <element signature="e#602#603#0" expanded="false" />
-            <element signature="e#642#643#0" expanded="false" />
-            <element signature="e#679#680#0" expanded="false" />
-            <element signature="e#712#713#0" expanded="false" />
-            <element signature="e#764#765#0" expanded="false" />
-            <element signature="e#808#809#0" expanded="false" />
-            <element signature="e#847#848#0" expanded="false" />
-            <element signature="e#884#885#0" expanded="false" />
-            <element signature="e#1025#1026#0" expanded="false" />
-            <element signature="e#1052#1053#0" expanded="false" />
-            <element signature="e#1092#1093#0" expanded="false" />
-            <element signature="e#1124#1125#0" expanded="false" />
-            <element signature="e#1158#1159#0" expanded="false" />
-            <element signature="e#1188#1189#0" expanded="false" />
-            <element signature="e#1234#1235#0" expanded="false" />
-            <element signature="e#1272#1273#0" expanded="false" />
-            <element signature="e#1484#1485#0" expanded="false" />
-            <element signature="e#1514#1515#0" expanded="false" />
-            <element signature="e#1566#1567#0" expanded="false" />
-            <element signature="e#1604#1605#0" expanded="false" />
+            <element signature="e#1461#1728#0" expanded="false" />
+            <element signature="e#1727#1728#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/clinic_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/history_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.379311">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_menu_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63461536">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../sdk/platforms/android-23/data/res/drawable-ldpi/ic_menu_delete.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/history_item_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5172415">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/adapter/HistoryAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="10" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ViewHolder#0;class#HistoryAdapter#0" expanded="false" />
+            <element signature="e#2945#3518#0" expanded="true" />
+            <element signature="e#3517#3518#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2589,40 +2541,48 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="140" column="41" selection-start-line="140" selection-start-column="41" selection-end-line="140" selection-end-column="41" />
+          <caret line="141" column="40" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="40" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectRegion#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#detectRegion#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#detectClinic#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#5284#5285#0" expanded="true" />
-            <element signature="e#5338#5339#0" expanded="true" />
-            <element signature="e#5422#5423#0" expanded="true" />
-            <element signature="e#5479#5480#0" expanded="true" />
-            <element signature="e#9399#9400#0" expanded="true" />
-            <element signature="e#9429#9430#0" expanded="true" />
+            <element signature="method#detectClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#validatePersonAtClinic#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#selectSpeciality#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#openHistory#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#loadOrderTicketAndCallDoctorForm#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#6524:7069" expanded="false" />
+            <element signature="method#onItemSelected#0;class#6524:7069" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#6524:7069" expanded="false" />
+            <element signature="class#7124:8198" expanded="false" />
+            <element signature="method#onItemSelected#0;class#7124:8198" expanded="false" />
+            <element signature="class#8260:8828" expanded="false" />
+            <element signature="method#onItemSelected#0;class#8260:8828" expanded="false" />
+            <element signature="class#8890:9269" expanded="false" />
+            <element signature="method#finishOfAction#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/input_personal_data_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ordet_ticket_and_call_doctor_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/artyom/hospitalonline/dataProvider/DataProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44666666">
+          <caret line="135" column="1" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
+          <folding>
+            <element signature="method#getClinicsList#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getHistory#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctors#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getFreeSessions#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#isClient#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#specialityOfStaff#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctorFromName#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getDoctorsFromSpeciality#0;class#DataProvider#0" expanded="false" />
+            <element signature="method#getAvailableSessionsFromDoctor#0;class#DataProvider#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
