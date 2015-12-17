@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.artyom.hospitalonline.R;
 import com.example.artyom.hospitalonline.dataProvider.DataProvider;
@@ -80,6 +81,7 @@ public class HistoryAdapter extends ArrayAdapter{
                     ListView historyListView = (ListView) context.findViewById(R.id.historyListView);
                     ArrayAdapter<Action> historyArrayAdapter = new HistoryAdapter(context, history);
                     historyListView.setAdapter(historyArrayAdapter);
+                    Toast.makeText(context, "Заказ отменён!", Toast.LENGTH_LONG).show();
                 }
             });
             historyView.setTag(holder);
@@ -87,7 +89,7 @@ public class HistoryAdapter extends ArrayAdapter{
             holder = (ViewHolder) historyView.getTag();
         }
         holder.itemBackground.setBackgroundColor(
-                (action.getDate().compareTo(Calendar.getInstance()) < 0) ? Color.parseColor("#F0D587") : Color.LTGRAY);
+                (action.getDate().compareTo(Calendar.getInstance()) > 0) ? Color.parseColor("#F0D587") : Color.LTGRAY);
         holder.actionTypeImageView.setBackgroundResource(
                 (action.getActionType() == ActionType.CALL_DOCTOR) ? R.drawable.doctor : R.drawable.ticket);
         holder.specialityTextView.setText(action.getDoctor().getSpeciality().toString());

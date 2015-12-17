@@ -140,7 +140,10 @@ public class DataProvider {
         int size = days.size();
         String items[] = new String[size];
         for(int i = 0; i < size; i++){
-            items[i] = days.get(i).get(Calendar.DAY_OF_MONTH)+ "." + (days.get(i).get(Calendar.MONTH)+1);
+            Calendar day = days.get(i);
+            items[i] = day.get(Calendar.DAY_OF_MONTH)+ "."
+                    + (day.get(Calendar.MONTH)+1) + " ("
+                    + mappedDayOfWeek(day.get(Calendar.DAY_OF_WEEK)) + ")";
         }
         return items;
     }
@@ -155,4 +158,24 @@ public class DataProvider {
         return items;
     }
 
+    private static String mappedDayOfWeek(int day){
+        switch (day){
+            case 1:
+                return "Вс";
+            case 2:
+                return "Пн";
+            case 3:
+                return "Вт";
+            case 4:
+                return "Ср";
+            case 5:
+                return "Чт";
+            case 6:
+                return "Пт";
+            case 7:
+                return "Сб";
+            default:
+                return "null";
+        }
+    }
 }

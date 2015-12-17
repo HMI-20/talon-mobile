@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by Artyom on 25.10.2015.
  */
-public class Doctor {
+public class Doctor{
     private  String fullName;
     private Speciality speciality;
     private List<List<Calendar>> freeSession;
@@ -35,4 +35,5 @@ public class Doctor {
     public void setFreeSession(List<List<Calendar>> freeSession) {
         this.freeSession = freeSession;
     }
+
 }

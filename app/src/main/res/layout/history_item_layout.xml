@@ -5,11 +5,23 @@
     android:id="@+id/itemBackground"
     android:weightSum="1">
 
-    <ImageView
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:id="@+id/actionTypeImageView"
-        android:background="@drawable/ticket" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/actionTypeImageView"
+            android:background="@drawable/ticket" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteButton"
+            android:background="@drawable/trash_bucket" />
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
@@ -25,7 +37,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Large Text"
                 android:id="@+id/specialityTextView" />
 
@@ -39,19 +51,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Small Text"
                 android:id="@+id/sessionDateTextView" />
         </LinearLayout>
     </LinearLayout>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="71dp"
-        android:layout_gravity="right"
-        android:id="@+id/deleteButton"
-        android:background="@drawable/trash_bucket"
-        android:layout_weight="0.20" />
 
 </LinearLayout>
    <!-- android:layout_gravity="center_vertical|end"-->

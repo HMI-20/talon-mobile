@@ -14,22 +14,30 @@
         <Button
             android:layout_width="48dp"
             android:layout_height="wrap_content"
-            android:id="@+id/backToMainMenuButton"
-            android:layout_column="3"
+            android:id="@+id/helpButton"
             android:background="@drawable/back"
             android:onClick="backToMenu" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="219dp"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="История"
-            android:id="@+id/titleTextView"
+            android:id="@+id/textView2"
             android:layout_column="0"
-            android:layout_weight="3"
             android:background="#93AF56"
             android:gravity="center"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:layout_weight="4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_weight="1"
+            android:background="@drawable/logout"
+            android:onClick="logout"
+            android:nestedScrollingEnabled="false" />
     </LinearLayout>
 
     <ListView

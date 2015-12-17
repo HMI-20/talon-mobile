@@ -26,6 +26,8 @@ import com.example.artyom.hospitalonline.model.Clinic;
 import com.example.artyom.hospitalonline.model.Patient;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -130,6 +132,9 @@ public class MainActivity extends AppCompatActivity {
         person.setAddress(((EditText) findViewById(R.id.adressEditText)).getText().toString());
         person.setDateOfBirthday(new Date(((DatePicker) findViewById(R.id.datePicker)).getCalendarView().getDate()));
         if(isClient(clinic, person)){
+            List<Action> history = getHistory(person);
+            Collections.reverse(history);
+            person.setHistory(history);
             setContentView(R.layout.main_menu_layout);
         }else{
             Toast.makeText(this, "В картотеке учреждения \"" + clinic.getTitle() +
@@ -156,14 +161,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void openHistory(View v){
-        setContentView(R.layout.history_layout);
-        ListView history = (ListView) findViewById(R.id.historyListView);
-        ArrayAdapter<Action> historyArrayAdapter = new HistoryAdapter(this, getHistory(person));
-        history.setAdapter(historyArrayAdapter);
-    }
-
-//---------ordet_ticket_and_call_doctor_layout
+//---------order_ticket_and_call_doctor_layout
     public void backToMenu(View v){
         setContentView(R.layout.main_menu_layout);
     }
@@ -241,7 +239,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void finishOfAction(View v){
-        person.getHistory().add(action);
+        Action fullAction = new Action();
+        fullAction.setActionType(action.getActionType());
+        action.setActionType(null);
+        fullAction.setDate(action.getDate());
+        action.setDate(null);
+        fullAction.setDoctor(action.getDoctor());
+        action.setDoctor(null);
+        person.getHistory().add(0, fullAction);
+        setHistory(person.getHistory());
         backToMenu(v);
         Toast.makeText(this, "Выполнено!Просмотреть или отменить заказ можно в разделе \"История\"", Toast.LENGTH_LONG).show();
     }
@@ -250,7 +256,12 @@ public class MainActivity extends AppCompatActivity {
         this.day = day;
     }
 
-
-
+//---------history_layout
+    public void openHistory(View v){
+        setContentView(R.layout.history_layout);
+        ListView history = (ListView) findViewById(R.id.historyListView);
+        ArrayAdapter<Action> historyArrayAdapter = new HistoryAdapter(this, person.getHistory());
+        history.setAdapter(historyArrayAdapter);
+    }
 
 }
